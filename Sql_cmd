@@ -8,3 +8,5 @@ mysql 서버 접속 : mysql -uroot -p
 -마지막에 flush privileges;
 
 데이터베이스 접속 방법 : mysql -h[호스트명] -u[DB계정명] [db이름]
+
+쿼리 중간 취소 : /c
