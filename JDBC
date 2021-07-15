@@ -1,12 +1,6 @@
 JDBC (Java Database Connectivity)
 : 자바 프로그램내에서 SQL문을 실행하기 위한 자바 API
 
-Maven-JDBC드라이버 설치(Maven 의존성 부여)
-<dependency>   
-  <groupId>mysql</groupId>   
-       <artifactId>mysql-connector-java</artifactId>
-       <version>5.1.45</version>
- </dependency>
  
  JDBC 클래스의 생성관계
  DriverManager => Connection 인스턴스 => Statement => ResultSet 
