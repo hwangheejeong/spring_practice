@@ -7,3 +7,9 @@ CoC(Convention over Configuration)
 -다양한 플러그인 제공
 
 
+Maven-JDBC드라이버 설치(Maven 의존성 부여)
+<dependency>   
+  <groupId>mysql</groupId>   
+       <artifactId>mysql-connector-java</artifactId>
+       <version>5.1.45</version>
+ </dependency>
