@@ -9,8 +9,16 @@ Maven-JDBC드라이버 설치(Maven 의존성 부여)
  </dependency>
  
  JDBC 클래스의 생성관계
- DriverManager => Connection 인스턴스 => Statement => ResultSet
+ DriverManager => Connection 인스턴스 => Statement => ResultSet 
+ 1.드라이브 연결 : Class.forName("com.mysql.jdbc.Driver");
+ 2.Connection conn = DriverManager.getConnection(url, User, passwd);
+ 3.PrepareStatement ps = conn.prepareStatement(sql);	
+ 4.ResultSet rs = ps.executeQuery();
+ 
  
 ****
 source => generate getters and setters => getter & setter 자동 생성
        => toString 자동 생성
+
+select하는 sql => executeQuery();
+insert update delete 하는 sql => executeUpdate();
