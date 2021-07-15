@@ -5,8 +5,15 @@ mysql 서버 접속 : mysql -uroot -p
 해당 데이터베이스를 이용할 수 있는 권한주기 
 -어떤 클라이어트든: grant all privileges on [db이름].* to [계정이름]@'%'identified by'암호';
 -해당 컴퓨터에서만: grant all privileges on [db이름].* to [계정이름]@'localhost'identified by'암호';
--마지막에 flush privileges;
+-마지막에 flush privileges; 
 
 데이터베이스 접속 방법 : mysql -h[호스트명] -u[DB계정명] [db이름]
 
 쿼리 중간 취소 : /c
+데이터베이스 선택 : use [db이름]
+현재 테이블 목록 확인 : show tables;
+테이브의 구조 확인 : desc [테이블이름];
+
+테이블 넣기
+1.cd를 이용해 디렉토리를 해당 디렉토리로 변경
+2.mysql -u[계정이름] -p [db이름] < [sql파일 이름]
