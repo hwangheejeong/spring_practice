@@ -11,4 +11,6 @@ Maven-JDBC드라이버 설치(Maven 의존성 부여)
  JDBC 클래스의 생성관계
  DriverManager => Connection 인스턴스 => Statement => ResultSet
  
- 
+****
+source => generate getters and setters => getter & setter 자동 생성
+       => toString 자동 생성
