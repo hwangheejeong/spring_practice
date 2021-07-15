@@ -1,4 +1,29 @@
 서블릿 - 동적인 처리를 하는 프로그램의 역할
 
+서블릿 3.0 이상은 web.xml X
 
-자바 웹 어플리케이션 +--------WEB-INF 폴더 +----web.xml
+out.println => 응답결과로 보내줌
+System.out.println => 콘솔로 보여줌
+
+서블릿 생명주기 - init() service(request,response) destroy()
+
+<<
+ if (메모리에 없음) {
+ - 해당 서블릿 클래스를 메모리에 올림
+ - init() 메소드를 실행}
+ 
+ - service()메소드를 실행
+was가 종료되거나, 웹 어플리케이션이 새롭게 갱신될 경우 destroy() 메소드가 실행>
+vv풀이vv
+1.서블릿 객체 생성
+2.init() 호출
+3.service() 호출
+-다시 run
+1.service() 호출
+-WAS 종료 OR 메소드 갱신
+1.destroy() 호출
+
+개발자가 service를 오버라이딩하지 않았다면
+HttpSurvlet의 service 메소드
+클라이언트 요청이 get일 경우 : doGet(request.response)
+클라이언트 요청이 post일 경우 : doPost(request,response)
