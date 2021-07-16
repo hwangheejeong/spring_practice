@@ -1,6 +1,6 @@
 서블릿 - 동적인 처리를 하는 프로그램의 역할
 
-서블릿 3.0 이상은 web.xml X
+서블릿 3.0 이상은 web.xml (X)
 
 out.println => 응답결과로 보내줌
 System.out.println => 콘솔로 보여줌
@@ -27,3 +27,21 @@ vv풀이vv
 HttpSurvlet의 service 메소드
 클라이언트 요청이 get일 경우 : doGet(request.response)
 클라이언트 요청이 post일 경우 : doPost(request,response)
+
+response 전에 contenttype 작성
+	: response.setContentType("text/html");
+클라이언트와 연결
+ : intWriter out = response.getWriter();
+
+
+WAS
+클라이언트한테 요청이 들어오면 HttpServletRequest/Response 생성
+->객체를 서블릿에 파라미터로 전달
+
+
+url주소의 파라미터 정보를 읽어 브라우저 화면에 출력
+-url 주소 중 ? 뒤
+
+파라미터는 문자열로 넘어옴!!
+
+
