@@ -1,0 +1,9 @@
+Scope 
+-Application : 하나의 어플리케이션이 소멸될 때까지
+-Session : 세션 객체가 만들어져서 사라질 때까지 (여러개의 요청)
+-Request : 클라이언트로부터 하나의 요청이 들어와서 응답을 보낼 때까지
+-Page 
+
+
+[Page Scope]
+PageContext 추상클래스 사용
