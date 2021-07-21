@@ -25,5 +25,5 @@ HttpSession 인터페이스  /  JSP에서는 session내장변수 사용
 장바구니같이 사용자별로 유지가 되어야 할 정보가 있을 때 사용
 
 [Application Scope]
-
+계속 사용!!!
 
