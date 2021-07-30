@@ -1,0 +1,17 @@
+Model  뷰가 렌더링하는데 필요한 데이터
+View 실제로 보이는 부분
+Controller 사용자의 응답에 액션
+
+MVC Model 1 아키텍처
+요청만큼 jsp페이지 필요 => 유지보수 어렵
+MVC Model 2 아키텍쳐
+서블릿이 요청을 받음
+
+Model 2 발전
+서블릿 한개가 모든 요청을 받음
+실제 처리는 컨트롤러/핸들러 클래스가
+=> Spring MVC
+ 
+Dispatcher Servlet - 프론트 컨트롤러(Front Controller)
+ : 클라이언트의 모든 요청을 받아, 핸들러에게 넘김 -> 핸들러가 처리한 결과를 클라이언트에게 보여줌
+
