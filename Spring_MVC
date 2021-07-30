@@ -15,3 +15,5 @@ Model 2 발전
 Dispatcher Servlet - 프론트 컨트롤러(Front Controller)
  : 클라이언트의 모든 요청을 받아, 핸들러에게 넘김 -> 핸들러가 처리한 결과를 클라이언트에게 보여줌
 
+
+RestController
